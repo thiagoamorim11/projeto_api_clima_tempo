@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "projeto-api-clima-tempo"
+version = "0.1.0"
+description = ""
+authors = ["thiagoamorim11 <ttthiago.amorim@gmail>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.3.0"
+requests = "^2.32.4"
+pytest = "^8.4.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
