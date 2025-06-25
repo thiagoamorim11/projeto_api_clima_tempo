@@ -53,5 +53,6 @@ df = pd.DataFrame(registros)
 nome_arquivo = f"clima_cidades_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
 
 # Salvar o DataFrame no CSV
-df.to_csv(nome_arquivo, index=False)
+# Correção dos caracterés com assentuação utilizando 'encoding='latin-1' ou encoding='cp1252''
+df.to_csv(nome_arquivo, index=False, encoding='cp1252')
 print(f"Arquivo salvo como: {nome_arquivo}")
